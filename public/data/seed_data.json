@@ -1,0 +1,1327 @@
+{
+  "AUTHOR": [
+    {
+      "AUTHORID": 1,
+      "NAME": "Abraham Silberschatz",
+      "EMAIL": "silberschatz@yale.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 2,
+      "NAME": "Henry F. Korth",
+      "EMAIL": "korth@lehigh.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 3,
+      "NAME": "S. Sudarshan",
+      "EMAIL": "sudarsha@iitb.ac.in",
+      "NATIONALITY": "Indian"
+    },
+    {
+      "AUTHORID": 4,
+      "NAME": "Thomas H. Cormen",
+      "EMAIL": "thc@cs.dartmouth.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 5,
+      "NAME": "Charles E. Leiserson",
+      "EMAIL": "cel@mit.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 6,
+      "NAME": "Ronald L. Rivest",
+      "EMAIL": "rivest@mit.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 7,
+      "NAME": "Clifford Stein",
+      "EMAIL": "cliff@columbia.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 8,
+      "NAME": "Robert C. Martin",
+      "EMAIL": "unclebob@cleancoder.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 9,
+      "NAME": "Martin Fowler",
+      "EMAIL": "fowler@thoughtworks.com",
+      "NATIONALITY": "British"
+    },
+    {
+      "AUTHORID": 10,
+      "NAME": "Donald E. Knuth",
+      "EMAIL": "knuth@cs.stanford.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 11,
+      "NAME": "Andrew S. Tanenbaum",
+      "EMAIL": "ast@cs.vu.nl",
+      "NATIONALITY": "Dutch"
+    },
+    {
+      "AUTHORID": 12,
+      "NAME": "David J. Wetherall",
+      "EMAIL": "djw@cs.washington.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 13,
+      "NAME": "Stuart Russell",
+      "EMAIL": "russell@berkeley.edu",
+      "NATIONALITY": "British"
+    },
+    {
+      "AUTHORID": 14,
+      "NAME": "Peter Norvig",
+      "EMAIL": "norvig@google.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 15,
+      "NAME": "Ian Goodfellow",
+      "EMAIL": "ian.goodfellow@deepmind.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 16,
+      "NAME": "Yoshua Bengio",
+      "EMAIL": "yoshua.bengio@mila.quebec",
+      "NATIONALITY": "Canadian"
+    },
+    {
+      "AUTHORID": 17,
+      "NAME": "Aaron Courville",
+      "EMAIL": "aaron.courville@umontreal.ca",
+      "NATIONALITY": "Canadian"
+    },
+    {
+      "AUTHORID": 18,
+      "NAME": "Brian W. Kernighan",
+      "EMAIL": "bwk@cs.princeton.edu",
+      "NATIONALITY": "Canadian"
+    },
+    {
+      "AUTHORID": 19,
+      "NAME": "Dennis M. Ritchie",
+      "EMAIL": "dmr@bell-labs.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 20,
+      "NAME": "Bjarne Stroustrup",
+      "EMAIL": "bjarne@stroustrup.com",
+      "NATIONALITY": "Danish"
+    },
+    {
+      "AUTHORID": 21,
+      "NAME": "Guido van Rossum",
+      "EMAIL": "guido@python.org",
+      "NATIONALITY": "Dutch"
+    },
+    {
+      "AUTHORID": 22,
+      "NAME": "Joshua Bloch",
+      "EMAIL": "joshua.bloch@cmu.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 23,
+      "NAME": "Jon Bentley",
+      "EMAIL": "jbentley@alumni.cmu.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 24,
+      "NAME": "Erich Gamma",
+      "EMAIL": "gamma@acm.org",
+      "NATIONALITY": "Swiss"
+    },
+    {
+      "AUTHORID": 25,
+      "NAME": "Richard Helm",
+      "EMAIL": "helm@acm.org",
+      "NATIONALITY": "Australian"
+    },
+    {
+      "AUTHORID": 26,
+      "NAME": "Ralph Johnson",
+      "EMAIL": "johnson@cs.uiuc.edu",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 27,
+      "NAME": "John Vlissides",
+      "EMAIL": "vlissides@watson.ibm.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 28,
+      "NAME": "Kyle Simpson",
+      "EMAIL": "getify@gmail.com",
+      "NATIONALITY": "American"
+    },
+    {
+      "AUTHORID": 29,
+      "NAME": "Addy Osmani",
+      "EMAIL": "addyosmani@gmail.com",
+      "NATIONALITY": "British"
+    },
+    {
+      "AUTHORID": 30,
+      "NAME": "Marijn Haverbeke",
+      "EMAIL": "marijnh@gmail.com",
+      "NATIONALITY": "Dutch"
+    },
+    {
+      "AUTHORID": 31,
+      "NAME": "Yashavant Kanetkar",
+      "EMAIL": "y.kanetkar@kicit.com",
+      "NATIONALITY": "Indian"
+    },
+    {
+      "AUTHORID": 32,
+      "NAME": "Herbert Schildt",
+      "EMAIL": "herbert@schildt.com",
+      "NATIONALITY": "American"
+    }
+  ],
+  "PUBLISHER": [
+    {
+      "PUBLISHERID": 1,
+      "NAME": "McGraw-Hill Education",
+      "NATIONALITY": "American"
+    },
+    {
+      "PUBLISHERID": 2,
+      "NAME": "Pearson Education",
+      "NATIONALITY": "British"
+    },
+    {
+      "PUBLISHERID": 3,
+      "NAME": "Addison-Wesley Professional",
+      "NATIONALITY": "American"
+    },
+    {
+      "PUBLISHERID": 4,
+      "NAME": "John Wiley & Sons",
+      "NATIONALITY": "American"
+    },
+    {
+      "PUBLISHERID": 5,
+      "NAME": "MIT Press",
+      "NATIONALITY": "American"
+    },
+    {
+      "PUBLISHERID": 6,
+      "NAME": "O'Reilly Media",
+      "NATIONALITY": "American"
+    },
+    {
+      "PUBLISHERID": 7,
+      "NAME": "Springer Nature",
+      "NATIONALITY": "German"
+    },
+    {
+      "PUBLISHERID": 8,
+      "NAME": "Oxford University Press",
+      "NATIONALITY": "British"
+    }
+  ],
+  "LIBRARY": [
+    {
+      "LIBRARYID": 1,
+      "NAME": "Central Campus Library"
+    },
+    {
+      "LIBRARYID": 2,
+      "NAME": "Engineering & Tech Library"
+    },
+    {
+      "LIBRARYID": 3,
+      "NAME": "Science & Research Library"
+    }
+  ],
+  "STUDENT": [
+    {
+      "STUDENTID": 1,
+      "USERID": "CS2023001",
+      "STUDENTNAME": "Aarav Sharma",
+      "STUDENTEMAIL": "aarav.sharma@college.edu",
+      "STUDENTPHONENUMBER": "9876543210",
+      "BRANCH": "CSE",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 2,
+      "USERID": "CS2023002",
+      "STUDENTNAME": "Diya Patel",
+      "STUDENTEMAIL": "diya.patel@college.edu",
+      "STUDENTPHONENUMBER": "9876543211",
+      "BRANCH": "CSE",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 3,
+      "USERID": "IT2023010",
+      "STUDENTNAME": "Rohan Mehta",
+      "STUDENTEMAIL": "rohan.mehta@college.edu",
+      "STUDENTPHONENUMBER": "9876543212",
+      "BRANCH": "IT",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 4,
+      "USERID": "AI2023005",
+      "STUDENTNAME": "Ananya Iyer",
+      "STUDENTEMAIL": "ananya.iyer@college.edu",
+      "STUDENTPHONENUMBER": "9876543213",
+      "BRANCH": "AIML",
+      "SEMESTER": 3
+    },
+    {
+      "STUDENTID": 5,
+      "USERID": "DS2023008",
+      "STUDENTNAME": "Kavya Nair",
+      "STUDENTEMAIL": "kavya.nair@college.edu",
+      "STUDENTPHONENUMBER": "9876543214",
+      "BRANCH": "AIDS",
+      "SEMESTER": 3
+    },
+    {
+      "STUDENTID": 6,
+      "USERID": "EC2022015",
+      "STUDENTNAME": "Aditya Verma",
+      "STUDENTEMAIL": "aditya.verma@college.edu",
+      "STUDENTPHONENUMBER": "9876543215",
+      "BRANCH": "ECE",
+      "SEMESTER": 7
+    },
+    {
+      "STUDENTID": 7,
+      "USERID": "CS2024021",
+      "STUDENTNAME": "Ishaan Gupta",
+      "STUDENTEMAIL": "ishaan.gupta@college.edu",
+      "STUDENTPHONENUMBER": "9876543216",
+      "BRANCH": "CSE",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 8,
+      "USERID": "IT2024032",
+      "STUDENTNAME": "Meera Joshi",
+      "STUDENTEMAIL": "meera.joshi@college.edu",
+      "STUDENTPHONENUMBER": "9876543217",
+      "BRANCH": "IT",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 9,
+      "USERID": "AI2022012",
+      "STUDENTNAME": "Siddharth Rao",
+      "STUDENTEMAIL": "siddharth.rao@college.edu",
+      "STUDENTPHONENUMBER": "9876543218",
+      "BRANCH": "AIML",
+      "SEMESTER": 7
+    },
+    {
+      "STUDENTID": 10,
+      "USERID": "CS2022045",
+      "STUDENTNAME": "Pooja Reddy",
+      "STUDENTEMAIL": "pooja.reddy@college.edu",
+      "STUDENTPHONENUMBER": "9876543219",
+      "BRANCH": "CSE",
+      "SEMESTER": 7
+    },
+    {
+      "STUDENTID": 11,
+      "USERID": "EC2023023",
+      "STUDENTNAME": "Varun Malhotra",
+      "STUDENTEMAIL": "varun.malhotra@college.edu",
+      "STUDENTPHONENUMBER": "9876543220",
+      "BRANCH": "ECE",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 12,
+      "USERID": "DS2024011",
+      "STUDENTNAME": "Sneha Kulkarni",
+      "STUDENTEMAIL": "sneha.kulkarni@college.edu",
+      "STUDENTPHONENUMBER": "9876543221",
+      "BRANCH": "AIDS",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 13,
+      "USERID": "CS2023067",
+      "STUDENTNAME": "Nikhil Saxena",
+      "STUDENTEMAIL": "nikhil.saxena@college.edu",
+      "STUDENTPHONENUMBER": "9876543222",
+      "BRANCH": "CSE",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 14,
+      "USERID": "IT2022055",
+      "STUDENTNAME": "Priya Deshmukh",
+      "STUDENTEMAIL": "priya.deshmukh@college.edu",
+      "STUDENTPHONENUMBER": "9876543223",
+      "BRANCH": "IT",
+      "SEMESTER": 7
+    },
+    {
+      "STUDENTID": 15,
+      "USERID": "AI2024018",
+      "STUDENTNAME": "Karan Chopra",
+      "STUDENTEMAIL": "karan.chopra@college.edu",
+      "STUDENTPHONENUMBER": "9876543224",
+      "BRANCH": "AIML",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 16,
+      "USERID": "CS2024089",
+      "STUDENTNAME": "Tanvi Bansal",
+      "STUDENTEMAIL": "tanvi.bansal@college.edu",
+      "STUDENTPHONENUMBER": "9876543225",
+      "BRANCH": "CSE",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 17,
+      "USERID": "EC2024031",
+      "STUDENTNAME": "Gaurav Bhatt",
+      "STUDENTEMAIL": "gaurav.bhatt@college.edu",
+      "STUDENTPHONENUMBER": "9876543226",
+      "BRANCH": "ECE",
+      "SEMESTER": 1
+    },
+    {
+      "STUDENTID": 18,
+      "USERID": "DS2023044",
+      "STUDENTNAME": "Simran Kaur",
+      "STUDENTEMAIL": "simran.kaur@college.edu",
+      "STUDENTPHONENUMBER": "9876543227",
+      "BRANCH": "AIDS",
+      "SEMESTER": 3
+    },
+    {
+      "STUDENTID": 19,
+      "USERID": "IT2023078",
+      "STUDENTNAME": "Rahul Singhania",
+      "STUDENTEMAIL": "rahul.singhania@college.edu",
+      "STUDENTPHONENUMBER": "9876543228",
+      "BRANCH": "IT",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 20,
+      "USERID": "CS2023099",
+      "STUDENTNAME": "Neha Choudhary",
+      "STUDENTEMAIL": "neha.choudhary@college.edu",
+      "STUDENTPHONENUMBER": "9876543229",
+      "BRANCH": "CSE",
+      "SEMESTER": 5
+    },
+    {
+      "STUDENTID": 21,
+      "USERID": "CS2023101",
+      "STUDENTNAME": "Arjun Nambiar",
+      "STUDENTEMAIL": "arjun.nambiar@college.edu",
+      "STUDENTPHONENUMBER": "9876543230",
+      "BRANCH": "CSE",
+      "SEMESTER": 3
+    },
+    {
+      "STUDENTID": 22,
+      "USERID": "IT2023102",
+      "STUDENTNAME": "Bhavna Sen",
+      "STUDENTEMAIL": "bhavna.sen@college.edu",
+      "STUDENTPHONENUMBER": "9876543231",
+      "BRANCH": "IT",
+      "SEMESTER": 3
+    }
+  ],
+  "BOOKS": [
+    {
+      "BOOKID": 1,
+      "TITLE": "Database System Concepts",
+      "ISBN": "978-0073523323",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2019,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 2,
+      "TITLE": "Introduction to Algorithms",
+      "ISBN": "978-0262033848",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 2009,
+      "PUBLISHERID": 5,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 3,
+      "TITLE": "Clean Code",
+      "ISBN": "978-0132350884",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2008,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 4,
+      "TITLE": "Computer Networks",
+      "ISBN": "978-0132126953",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2010,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 5,
+      "TITLE": "Artificial Intelligence: A Modern Approach",
+      "ISBN": "978-0136042594",
+      "CATEGORY": "AI",
+      "PUBLICATIONYEAR": 2020,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 6,
+      "TITLE": "Deep Learning",
+      "ISBN": "978-0262035613",
+      "CATEGORY": "AI",
+      "PUBLICATIONYEAR": 2016,
+      "PUBLISHERID": 5,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 7,
+      "TITLE": "Design Patterns: Elements of Reusable Object",
+      "ISBN": "978-0201633610",
+      "CATEGORY": "Software",
+      "PUBLICATIONYEAR": 1994,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 8,
+      "TITLE": "The C Programming Language",
+      "ISBN": "978-0131103627",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 1988,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 9,
+      "TITLE": "The C++ Programming Language",
+      "ISBN": "978-0321563842",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2013,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 10,
+      "TITLE": "Effective Java",
+      "ISBN": "978-0134685991",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2017,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 11,
+      "TITLE": "Programming Pearls",
+      "ISBN": "978-0201657882",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 1999,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 12,
+      "TITLE": "The Art of Computer Programming, Vol 1",
+      "ISBN": "978-0201896831",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 1997,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 13,
+      "TITLE": "Refactoring: Improving the Design of Code",
+      "ISBN": "978-0134757599",
+      "CATEGORY": "Software",
+      "PUBLICATIONYEAR": 2018,
+      "PUBLISHERID": 3,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 14,
+      "TITLE": "You Don't Know JS: Scope & Closures",
+      "ISBN": "978-1449335588",
+      "CATEGORY": "Web",
+      "PUBLICATIONYEAR": 2014,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 15,
+      "TITLE": "Learning JavaScript Design Patterns",
+      "ISBN": "978-1449331818",
+      "CATEGORY": "Web",
+      "PUBLICATIONYEAR": 2012,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 16,
+      "TITLE": "Eloquent JavaScript",
+      "ISBN": "978-1593279509",
+      "CATEGORY": "Web",
+      "PUBLICATIONYEAR": 2018,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 17,
+      "TITLE": "Operating System Concepts",
+      "ISBN": "978-1118063330",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2018,
+      "PUBLISHERID": 4,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 18,
+      "TITLE": "Modern Operating Systems",
+      "ISBN": "978-0133591620",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2014,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 19,
+      "TITLE": "Let Us C",
+      "ISBN": "978-8183331630",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2016,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 20,
+      "TITLE": "Java: The Complete Reference",
+      "ISBN": "978-1260440232",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2021,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 21,
+      "TITLE": "Fundamentals of Database Systems",
+      "ISBN": "978-0133970777",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2015,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 22,
+      "TITLE": "Database Management Systems (Ramakrishnan)",
+      "ISBN": "978-0072465631",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2002,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 23,
+      "TITLE": "High Performance MySQL",
+      "ISBN": "978-1492080510",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2021,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 24,
+      "TITLE": "SQL Antipatterns",
+      "ISBN": "978-1934356555",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2010,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 25,
+      "TITLE": "Designing Data-Intensive Applications",
+      "ISBN": "978-1449373320",
+      "CATEGORY": "Database",
+      "PUBLICATIONYEAR": 2017,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 26,
+      "TITLE": "Python Crash Course",
+      "ISBN": "978-1593279288",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2019,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 27,
+      "TITLE": "Fluent Python",
+      "ISBN": "978-1491946008",
+      "CATEGORY": "Programming",
+      "PUBLICATIONYEAR": 2015,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 28,
+      "TITLE": "Data Structures and Algorithms in Python",
+      "ISBN": "978-1118290279",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 2013,
+      "PUBLISHERID": 4,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 29,
+      "TITLE": "Grokking Algorithms",
+      "ISBN": "978-1617292231",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 2016,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 30,
+      "TITLE": "Pattern Recognition and Machine Learning",
+      "ISBN": "978-0387310732",
+      "CATEGORY": "AI",
+      "PUBLICATIONYEAR": 2006,
+      "PUBLISHERID": 7,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 31,
+      "TITLE": "Hands-On Machine Learning with Scikit-Learn",
+      "ISBN": "978-1492032649",
+      "CATEGORY": "AI",
+      "PUBLICATIONYEAR": 2019,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 3
+    },
+    {
+      "BOOKID": 32,
+      "TITLE": "Computer Architecture: A Quantitative Appr.",
+      "ISBN": "978-0128119051",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2017,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 33,
+      "TITLE": "The Linux Programming Interface",
+      "ISBN": "978-1593272203",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2010,
+      "PUBLISHERID": 6,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 34,
+      "TITLE": "Clean Architecture",
+      "ISBN": "978-0134494166",
+      "CATEGORY": "Software",
+      "PUBLICATIONYEAR": 2017,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 2
+    },
+    {
+      "BOOKID": 35,
+      "TITLE": "Compilers: Principles, Techniques, & Tools",
+      "ISBN": "978-0321486813",
+      "CATEGORY": "Systems",
+      "PUBLICATIONYEAR": 2006,
+      "PUBLISHERID": 2,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 36,
+      "TITLE": "Introduction to the Theory of Computation",
+      "ISBN": "978-1133187790",
+      "CATEGORY": "Algorithms",
+      "PUBLICATIONYEAR": 2012,
+      "PUBLISHERID": 4,
+      "LIBRARYID": 1
+    },
+    {
+      "BOOKID": 37,
+      "TITLE": "Cloud Native Patterns",
+      "ISBN": "978-1617294297",
+      "CATEGORY": "Web",
+      "PUBLICATIONYEAR": 2019,
+      "PUBLISHERID": 1,
+      "LIBRARYID": 3
+    }
+  ],
+  "BORROW": [
+    {
+      "BORROWID": 1,
+      "BORROWDATE": "2024-01-10",
+      "DUE_DATE": "2024-01-24",
+      "RETURNDATE": "2024-01-20",
+      "STUDENTID": 1,
+      "BOOKID": 1
+    },
+    {
+      "BORROWID": 2,
+      "BORROWDATE": "2024-01-12",
+      "DUE_DATE": "2024-01-26",
+      "RETURNDATE": "2024-01-25",
+      "STUDENTID": 2,
+      "BOOKID": 3
+    },
+    {
+      "BORROWID": 3,
+      "BORROWDATE": "2024-01-15",
+      "DUE_DATE": "2024-01-29",
+      "RETURNDATE": "2024-02-02",
+      "STUDENTID": 3,
+      "BOOKID": 4
+    },
+    {
+      "BORROWID": 4,
+      "BORROWDATE": "2024-01-18",
+      "DUE_DATE": "2024-02-01",
+      "RETURNDATE": "2024-01-30",
+      "STUDENTID": 4,
+      "BOOKID": 5
+    },
+    {
+      "BORROWID": 5,
+      "BORROWDATE": "2024-01-20",
+      "DUE_DATE": "2024-02-03",
+      "RETURNDATE": "2024-02-01",
+      "STUDENTID": 5,
+      "BOOKID": 6
+    },
+    {
+      "BORROWID": 6,
+      "BORROWDATE": "2024-01-22",
+      "DUE_DATE": "2024-02-05",
+      "RETURNDATE": "2024-02-04",
+      "STUDENTID": 6,
+      "BOOKID": 7
+    },
+    {
+      "BORROWID": 7,
+      "BORROWDATE": "2024-01-25",
+      "DUE_DATE": "2024-02-08",
+      "RETURNDATE": "2024-02-07",
+      "STUDENTID": 7,
+      "BOOKID": 8
+    },
+    {
+      "BORROWID": 8,
+      "BORROWDATE": "2024-01-28",
+      "DUE_DATE": "2024-02-11",
+      "RETURNDATE": "2024-02-10",
+      "STUDENTID": 8,
+      "BOOKID": 9
+    },
+    {
+      "BORROWID": 9,
+      "BORROWDATE": "2024-02-01",
+      "DUE_DATE": "2024-02-15",
+      "RETURNDATE": "2024-02-14",
+      "STUDENTID": 9,
+      "BOOKID": 10
+    },
+    {
+      "BORROWID": 10,
+      "BORROWDATE": "2024-02-03",
+      "DUE_DATE": "2024-02-17",
+      "RETURNDATE": "2024-02-16",
+      "STUDENTID": 10,
+      "BOOKID": 11
+    },
+    {
+      "BORROWID": 11,
+      "BORROWDATE": "2024-02-05",
+      "DUE_DATE": "2024-02-19",
+      "RETURNDATE": "2024-02-18",
+      "STUDENTID": 11,
+      "BOOKID": 12
+    },
+    {
+      "BORROWID": 12,
+      "BORROWDATE": "2024-02-08",
+      "DUE_DATE": "2024-02-22",
+      "RETURNDATE": "2024-02-20",
+      "STUDENTID": 12,
+      "BOOKID": 13
+    },
+    {
+      "BORROWID": 13,
+      "BORROWDATE": "2024-02-10",
+      "DUE_DATE": "2024-02-24",
+      "RETURNDATE": "2024-02-22",
+      "STUDENTID": 13,
+      "BOOKID": 14
+    },
+    {
+      "BORROWID": 14,
+      "BORROWDATE": "2024-02-12",
+      "DUE_DATE": "2024-02-26",
+      "RETURNDATE": "2024-02-25",
+      "STUDENTID": 14,
+      "BOOKID": 15
+    },
+    {
+      "BORROWID": 15,
+      "BORROWDATE": "2024-02-15",
+      "DUE_DATE": "2024-03-01",
+      "RETURNDATE": "2024-02-28",
+      "STUDENTID": 15,
+      "BOOKID": 16
+    },
+    {
+      "BORROWID": 16,
+      "BORROWDATE": "2024-02-18",
+      "DUE_DATE": "2024-03-03",
+      "RETURNDATE": "2024-03-01",
+      "STUDENTID": 16,
+      "BOOKID": 17
+    },
+    {
+      "BORROWID": 17,
+      "BORROWDATE": "2024-02-20",
+      "DUE_DATE": "2024-03-05",
+      "RETURNDATE": "2024-03-04",
+      "STUDENTID": 17,
+      "BOOKID": 18
+    },
+    {
+      "BORROWID": 18,
+      "BORROWDATE": "2024-02-22",
+      "DUE_DATE": "2024-03-07",
+      "RETURNDATE": "2024-03-06",
+      "STUDENTID": 18,
+      "BOOKID": 19
+    },
+    {
+      "BORROWID": 19,
+      "BORROWDATE": "2024-02-25",
+      "DUE_DATE": "2024-03-10",
+      "RETURNDATE": "2024-03-08",
+      "STUDENTID": 19,
+      "BOOKID": 20
+    },
+    {
+      "BORROWID": 20,
+      "BORROWDATE": "2024-02-28",
+      "DUE_DATE": "2024-03-13",
+      "RETURNDATE": "2024-03-12",
+      "STUDENTID": 20,
+      "BOOKID": 21
+    },
+    {
+      "BORROWID": 21,
+      "BORROWDATE": "2024-03-01",
+      "DUE_DATE": "2024-03-15",
+      "RETURNDATE": "2024-03-14",
+      "STUDENTID": 1,
+      "BOOKID": 22
+    },
+    {
+      "BORROWID": 22,
+      "BORROWDATE": "2024-03-03",
+      "DUE_DATE": "2024-03-17",
+      "RETURNDATE": "2024-03-16",
+      "STUDENTID": 2,
+      "BOOKID": 23
+    },
+    {
+      "BORROWID": 23,
+      "BORROWDATE": "2024-03-05",
+      "DUE_DATE": "2024-03-19",
+      "RETURNDATE": "2024-03-18",
+      "STUDENTID": 3,
+      "BOOKID": 24
+    },
+    {
+      "BORROWID": 24,
+      "BORROWDATE": "2024-03-08",
+      "DUE_DATE": "2024-03-22",
+      "RETURNDATE": "2024-03-20",
+      "STUDENTID": 4,
+      "BOOKID": 25
+    },
+    {
+      "BORROWID": 25,
+      "BORROWDATE": "2024-03-10",
+      "DUE_DATE": "2024-03-24",
+      "RETURNDATE": "2024-03-22",
+      "STUDENTID": 5,
+      "BOOKID": 26
+    },
+    {
+      "BORROWID": 26,
+      "BORROWDATE": "2024-09-01",
+      "DUE_DATE": "2024-09-15",
+      "RETURNDATE": null,
+      "STUDENTID": 6,
+      "BOOKID": 2
+    },
+    {
+      "BORROWID": 27,
+      "BORROWDATE": "2024-09-05",
+      "DUE_DATE": "2024-09-19",
+      "RETURNDATE": null,
+      "STUDENTID": 7,
+      "BOOKID": 5
+    },
+    {
+      "BORROWID": 28,
+      "BORROWDATE": "2024-09-10",
+      "DUE_DATE": "2024-09-24",
+      "RETURNDATE": null,
+      "STUDENTID": 8,
+      "BOOKID": 10
+    },
+    {
+      "BORROWID": 29,
+      "BORROWDATE": "2024-09-12",
+      "DUE_DATE": "2024-09-26",
+      "RETURNDATE": null,
+      "STUDENTID": 9,
+      "BOOKID": 14
+    },
+    {
+      "BORROWID": 30,
+      "BORROWDATE": "2024-09-15",
+      "DUE_DATE": "2024-09-29",
+      "RETURNDATE": null,
+      "STUDENTID": 10,
+      "BOOKID": 18
+    },
+    {
+      "BORROWID": 31,
+      "BORROWDATE": "2024-09-20",
+      "DUE_DATE": "2024-10-04",
+      "RETURNDATE": null,
+      "STUDENTID": 11,
+      "BOOKID": 23
+    },
+    {
+      "BORROWID": 32,
+      "BORROWDATE": "2024-09-25",
+      "DUE_DATE": "2024-10-09",
+      "RETURNDATE": null,
+      "STUDENTID": 12,
+      "BOOKID": 27
+    },
+    {
+      "BORROWID": 33,
+      "BORROWDATE": "2024-09-28",
+      "DUE_DATE": "2024-10-12",
+      "RETURNDATE": null,
+      "STUDENTID": 13,
+      "BOOKID": 31
+    },
+    {
+      "BORROWID": 34,
+      "BORROWDATE": "2024-08-01",
+      "DUE_DATE": "2024-08-15",
+      "RETURNDATE": "2024-08-14",
+      "STUDENTID": 14,
+      "BOOKID": 32
+    },
+    {
+      "BORROWID": 35,
+      "BORROWDATE": "2024-08-05",
+      "DUE_DATE": "2024-08-19",
+      "RETURNDATE": "2024-08-18",
+      "STUDENTID": 15,
+      "BOOKID": 33
+    },
+    {
+      "BORROWID": 36,
+      "BORROWDATE": "2024-08-10",
+      "DUE_DATE": "2024-08-24",
+      "RETURNDATE": "2024-08-22",
+      "STUDENTID": 16,
+      "BOOKID": 34
+    },
+    {
+      "BORROWID": 37,
+      "BORROWDATE": "2024-08-15",
+      "DUE_DATE": "2024-08-29",
+      "RETURNDATE": "2024-08-28",
+      "STUDENTID": 17,
+      "BOOKID": 35
+    },
+    {
+      "BORROWID": 38,
+      "BORROWDATE": "2024-08-20",
+      "DUE_DATE": "2024-09-03",
+      "RETURNDATE": "2024-09-01",
+      "STUDENTID": 18,
+      "BOOKID": 36
+    },
+    {
+      "BORROWID": 39,
+      "BORROWDATE": "2024-08-25",
+      "DUE_DATE": "2024-09-08",
+      "RETURNDATE": "2024-09-05",
+      "STUDENTID": 19,
+      "BOOKID": 37
+    },
+    {
+      "BORROWID": 40,
+      "BORROWDATE": "2024-08-28",
+      "DUE_DATE": "2024-09-11",
+      "RETURNDATE": "2024-09-10",
+      "STUDENTID": 20,
+      "BOOKID": 1
+    },
+    {
+      "BORROWID": 41,
+      "BORROWDATE": "2024-10-01",
+      "DUE_DATE": "2024-10-15",
+      "RETURNDATE": null,
+      "STUDENTID": 1,
+      "BOOKID": 3
+    },
+    {
+      "BORROWID": 42,
+      "BORROWDATE": "2024-10-05",
+      "DUE_DATE": "2024-10-19",
+      "RETURNDATE": null,
+      "STUDENTID": 2,
+      "BOOKID": 8
+    }
+  ],
+  "WRITTEN_BY": [
+    {
+      "AUTHORID": 1,
+      "BOOKID": 1
+    },
+    {
+      "AUTHORID": 2,
+      "BOOKID": 1
+    },
+    {
+      "AUTHORID": 3,
+      "BOOKID": 1
+    },
+    {
+      "AUTHORID": 4,
+      "BOOKID": 2
+    },
+    {
+      "AUTHORID": 5,
+      "BOOKID": 2
+    },
+    {
+      "AUTHORID": 6,
+      "BOOKID": 2
+    },
+    {
+      "AUTHORID": 7,
+      "BOOKID": 2
+    },
+    {
+      "AUTHORID": 8,
+      "BOOKID": 3
+    },
+    {
+      "AUTHORID": 11,
+      "BOOKID": 4
+    },
+    {
+      "AUTHORID": 12,
+      "BOOKID": 4
+    },
+    {
+      "AUTHORID": 13,
+      "BOOKID": 5
+    },
+    {
+      "AUTHORID": 14,
+      "BOOKID": 5
+    },
+    {
+      "AUTHORID": 15,
+      "BOOKID": 6
+    },
+    {
+      "AUTHORID": 16,
+      "BOOKID": 6
+    },
+    {
+      "AUTHORID": 17,
+      "BOOKID": 6
+    },
+    {
+      "AUTHORID": 24,
+      "BOOKID": 7
+    },
+    {
+      "AUTHORID": 25,
+      "BOOKID": 7
+    },
+    {
+      "AUTHORID": 26,
+      "BOOKID": 7
+    },
+    {
+      "AUTHORID": 27,
+      "BOOKID": 7
+    },
+    {
+      "AUTHORID": 18,
+      "BOOKID": 8
+    },
+    {
+      "AUTHORID": 19,
+      "BOOKID": 8
+    },
+    {
+      "AUTHORID": 20,
+      "BOOKID": 9
+    },
+    {
+      "AUTHORID": 22,
+      "BOOKID": 10
+    },
+    {
+      "AUTHORID": 23,
+      "BOOKID": 11
+    },
+    {
+      "AUTHORID": 10,
+      "BOOKID": 12
+    },
+    {
+      "AUTHORID": 9,
+      "BOOKID": 13
+    },
+    {
+      "AUTHORID": 28,
+      "BOOKID": 14
+    },
+    {
+      "AUTHORID": 29,
+      "BOOKID": 15
+    },
+    {
+      "AUTHORID": 30,
+      "BOOKID": 16
+    },
+    {
+      "AUTHORID": 1,
+      "BOOKID": 17
+    },
+    {
+      "AUTHORID": 11,
+      "BOOKID": 18
+    },
+    {
+      "AUTHORID": 31,
+      "BOOKID": 19
+    },
+    {
+      "AUTHORID": 32,
+      "BOOKID": 20
+    },
+    {
+      "AUTHORID": 1,
+      "BOOKID": 21
+    },
+    {
+      "AUTHORID": 1,
+      "BOOKID": 22
+    },
+    {
+      "AUTHORID": 8,
+      "BOOKID": 23
+    },
+    {
+      "AUTHORID": 8,
+      "BOOKID": 24
+    },
+    {
+      "AUTHORID": 9,
+      "BOOKID": 25
+    },
+    {
+      "AUTHORID": 21,
+      "BOOKID": 26
+    },
+    {
+      "AUTHORID": 21,
+      "BOOKID": 27
+    },
+    {
+      "AUTHORID": 4,
+      "BOOKID": 28
+    },
+    {
+      "AUTHORID": 4,
+      "BOOKID": 29
+    },
+    {
+      "AUTHORID": 13,
+      "BOOKID": 30
+    },
+    {
+      "AUTHORID": 14,
+      "BOOKID": 31
+    },
+    {
+      "AUTHORID": 11,
+      "BOOKID": 32
+    },
+    {
+      "AUTHORID": 18,
+      "BOOKID": 33
+    },
+    {
+      "AUTHORID": 8,
+      "BOOKID": 34
+    },
+    {
+      "AUTHORID": 18,
+      "BOOKID": 35
+    },
+    {
+      "AUTHORID": 4,
+      "BOOKID": 36
+    },
+    {
+      "AUTHORID": 9,
+      "BOOKID": 37
+    }
+  ]
+}
