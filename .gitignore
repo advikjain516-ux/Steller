@@ -1,3 +1,26 @@
+# ==============================================================================
+# Git Ignore Configuration
+# ==============================================================================
+
+# AI Tooling, Agents & Coding Assistants
+.gemini/
+.antigravity/
+.cursor/
+.cursorrules
+.ai/
+.claude/
+.chatgpt/
+.openai/
+.agent/
+.agents/
+.copilot/
+brain/
+scratch/
+.system_generated/
+*.prompt
+*.transcript
+*.jsonl
+
 # Python
 __pycache__/
 *.py[cod]
@@ -6,17 +29,28 @@ __pycache__/
 .Python
 env/
 venv/
+ENV/
+env.bak/
+venv.bak/
 .env
 
-# SQLite
-# (Excluded from git if desired, but seed data is in public/data/seed_data.json)
+# Database & Locks
 *.db-journal
+*.db-wal
+*.db-shm
 
-# OS / Editor
+# Operating System & IDE Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-.vscode/
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# Vercel
+# Vercel Deployment Cache
 .vercel

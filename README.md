@@ -1,86 +1,38 @@
-# 📚 Library Management System (DBMS Project)
+# 📚 Library Management System (DBMS & Full-Stack Web Platform)
 
-An enterprise-grade, modern Web Application and Relational Database backend for the **Library Management System** (`library_management_system`).
-
-Built to seamlessly demonstrate all Core DBMS concepts:
-- **7 Relational Base Tables** with primary keys, foreign key constraints, check constraints, and composite keys
-- **5 Relational Views** (`AVAILABLE_BOOKS`, `CURRENT_BORROWINGS`, `STUDENT_BORROWING_HISTORY`, `BOOK_DETAILS`, `OVERDUE_BOOKS`)
-- **6 Stored Procedures** (`BORROW_BOOK`, `RETURN_BOOK`, `GET_STUDENT_BORROW_HISTORY`, `GET_BOOKS_BY_LIBRARY`, `LIST_ALL_ACTIVE_BORROWINGS`, `GENERATE_LIBRARY_STATS`)
-- **4 Stored Functions** (`GET_BOOK_AGE`, `GET_STUDENT_BORROW_COUNT`, `GET_ACTIVE_BORROW_COUNT`, `IS_BOOK_AVAILABLE`)
-- **4 Database Triggers** enforcing strict domain integrity and concurrency rules
-- **Interactive DBMS Evaluation Lab & SQL Console** built right into the frontend!
+A full-stack, enterprise-grade **Library Management System (`library_management_system`)** built with a normalized relational database backend, stored routines, triggers, relational views, and an interactive web dashboard.
 
 ---
 
-## 🚀 Quick Start (Running the Website)
-
-### Option 1: 1-Click Startup Script (Recommended)
-Open your terminal in this folder and run:
-```bash
-./start_server.sh
-```
-Or directly with Python:
-```bash
-python3 server.py
-```
-Then open your web browser at:
-👉 **[http://localhost:8000](http://localhost:8000)**
-
-### Option 2: Standalone Offline Mode (Zero Setup)
-If you don't have a terminal open, simply double-click or open:
-```
-public/index.html
-```
-in Google Chrome, Safari, Firefox, or Edge. The application includes a self-healing client-side database that loads the full seeded dataset so all features (Search, Issue Book, Return Book, View History, and Procedure simulators) work out of the box!
+## 📑 Table of Contents
+1. [Project Overview](#-project-overview)
+2. [Entity-Relationship & Architecture Design](#-entity-relationship--architecture-design)
+3. [Database Schema & Base Tables](#-database-schema--base-tables)
+4. [Relational Views](#-relational-views)
+5. [Stored Procedures](#-stored-procedures)
+6. [Stored Functions](#-stored-functions)
+7. [Integrity Triggers](#-integrity-triggers)
+8. [Cursor Implementations](#-cursor-implementations)
+9. [Frontend Web Platform & Features](#-frontend-web-platform--features)
+10. [Localhost Running Instructions](#-localhost-running-instructions)
+11. [Vercel Cloud Deployment Guide](#-vercel-cloud-deployment-guide)
+12. [Verification & Test Results](#-verification--test-results)
 
 ---
 
-## 🌟 Key Frontend Website Features
+## 🎯 Project Overview
 
-### 1. 📊 Executive Dashboard & Analytics
-- **Live KPI Badges**: Real-time counters for Total Books, Available Copies, Active Borrowings, Overdue Loans, Students, and Libraries.
-- **Overdue Alert Banner**: Automatically flags overdue books with 1-click navigation to circulation desk.
-- **Interactive Visualizations (Chart.js)**:
-  - **Collection by Category**: Doughnut chart breaking down inventory by domain (Database, AI, Algorithms, Systems, Web, Programming, Software).
-  - **Library Inventory Status**: Stacked bar chart showing Available vs. Borrowed copies per campus library.
+This project implements an end-to-end institutional library management platform that bridges raw relational algebra and database management theory with modern full-stack web engineering. 
 
-### 2. 📖 Books Catalog (`BOOK_DETAILS` & `AVAILABLE_BOOKS`)
-- **Dual Views**: Seamless toggle between responsive **Grid Cards** and high-density **Data Table**.
-- **Live Search & Multi-Filters**: Instant search by Title, Author name, or ISBN; filter by Category, Library branch, or Availability.
-- **Book Details & Age Inspection**: Modal inspecting author credits, publisher details, publication year, and live calculated age (`GET_BOOK_AGE`).
-- **Add New Book**: Complete dialog with category, publisher, campus library, and multi-author link with trigger range validation.
-
-### 3. 🔄 Circulation & Loans Desk (`BORROW_BOOK` & `RETURN_BOOK`)
-- **Issue Book Form**:
-  - Enforces `TRG_BEFORE_INSERT_BORROW`: rejects future borrow dates and due dates earlier than borrow date.
-  - Enforces `UQ_BORROW_ONE_ACTIVE_BOOK`: prevents issuing a book that is already checked out.
-- **Active Loans Table**:
-  - Powered by cursor procedure `LIST_ALL_ACTIVE_BORROWINGS()`.
-  - Displays borrower student details, issue date, due date, and dynamic overdue counter.
-- **Quick Return Action**:
-  - Calculates days overdue and estimated overdue fines.
-  - Executes `RETURN_BOOK` with validation rejecting return dates earlier than borrow date.
-
-### 4. 🎓 Students Directory & Loan History
-- **Searchable Students Registry**: Filter by branch (CSE, IT, AIML, AIDS, ECE) and roll number.
-- **Add Student Modal**: Enforces `TRG_BEFORE_INSERT_STUDENT` requiring non-empty name and roll/user ID of at least 5 characters.
-- **Student Borrow History Modal**:
-  - Executes `GET_STUDENT_BORROW_HISTORY(p_student_id)`.
-  - Displays complete historical audit trail with loan status (`Returned`, `Active`, or `OVERDUE`).
-
-### 5. ⚠️ Overdue Tracker (`OVERDUE_BOOKS`)
-- Dedicated view of loans requiring immediate attention.
-- Displays borrower contact details, days overdue, and simulated overdue reminder dispatch.
-
-### 6. 🧪 Interactive DBMS Evaluation Lab & SQL Console
-A dedicated tab designed specifically for lab evaluation and project presentation:
-- **Stored Procedures & Functions Runner**: Live controls to test `GET_BOOK_AGE()`, `IS_BOOK_AVAILABLE()`, `GET_STUDENT_BORROW_COUNT()`, and `GENERATE_LIBRARY_STATS()`.
-- **Trigger Validation Tester**: 1-click test suite verifying that database triggers block duplicate active loans, future borrow dates, out-of-range publication years, and short user IDs.
-- **Dynamic SQL Console**: Pre-loaded with queries from `select.sql`, `subqueries.sql`, and `views_indexes.sql`. Allows writing and executing custom queries with sub-millisecond execution timers and tabular output!
+### Core Capabilities:
+- **Relational Integrity**: Enforces strict referential integrity across 7 normalized tables (3NF/BCNF) with composite keys, cascade rules, and check constraints.
+- **Transactional Safety & Concurrency**: Features ACID-compliant transaction blocks with row-level pessimistic locking (`FOR UPDATE`) to prevent race conditions during book checkout.
+- **Routines & Programmability**: Employs stored procedures, custom scalar functions, cursor-based iterative batch processing, and triggers.
+- **Interactive Web Interface**: Single-page architecture with live Chart.js analytics, real-time search/filtering, modal workflows for loan issuance and returns, and an interactive DBMS query runner.
 
 ---
 
-## 🗄️ Relational Database Schema Overview
+## 🏛️ Entity-Relationship & Architecture Design
 
 ```
                       +-------------------+
@@ -106,61 +58,245 @@ A dedicated tab designed specifically for lab evaluation and project presentatio
                                 +-------------------+                     +
 ```
 
-### Table Specifications:
-1. `LIBRARY` (`LIBRARYID` PK, `NAME`)
-2. `PUBLISHER` (`PUBLISHERID` PK, `NAME`, `NATIONALITY`)
-3. `AUTHOR` (`AUTHORID` PK, `NAME`, `EMAIL` UNIQUE, `NATIONALITY`)
-4. `STUDENT` (`STUDENTID` PK, `USERID` UNIQUE, `STUDENTNAME`, `STUDENTEMAIL` UNIQUE, `STUDENTPHONENUMBER`, `BRANCH`, `SEMESTER`)
-5. `BOOKS` (`BOOKID` PK, `TITLE`, `ISBN`, `CATEGORY`, `PUBLICATIONYEAR`, `PUBLISHERID` FK, `LIBRARYID` FK)
-6. `BORROW` (`BORROWID` PK, `BORROWDATE`, `DUE_DATE`, `RETURNDATE`, `STUDENTID` FK, `BOOKID` FK, `ACTIVE_BOOKID` GENERATED STORED UNIQUE)
-7. `WRITTEN_BY` (`AUTHORID` FK, `BOOKID` FK, COMPOSITE PK `(AUTHORID, BOOKID)`)
+---
+
+## 🗄️ Database Schema & Base Tables
+
+The system comprises **7 base relational tables** engineered for MySQL (InnoDB Engine) with full foreign key constraints and secondary performance indexes:
+
+### 1. `LIBRARY`
+Holds information about physical library campuses.
+- `LIBRARYID` (INT, Primary Key, Auto Increment)
+- `NAME` (VARCHAR(150), NOT NULL)
+
+### 2. `PUBLISHER`
+Tracks book publishing organizations.
+- `PUBLISHERID` (INT, Primary Key, Auto Increment)
+- `NAME` (VARCHAR(150), NOT NULL)
+- `NATIONALITY` (VARCHAR(100), Default 'International')
+
+### 3. `AUTHOR`
+Catalog of book writers and co-contributors.
+- `AUTHORID` (INT, Primary Key, Auto Increment)
+- `NAME` (VARCHAR(150), NOT NULL)
+- `EMAIL` (VARCHAR(150), UNIQUE)
+- `NATIONALITY` (VARCHAR(100))
+
+### 4. `STUDENT`
+Institutional members eligible for circulation services.
+- `STUDENTID` (INT, Primary Key, Auto Increment)
+- `USERID` (VARCHAR(50), UNIQUE, NOT NULL) — *Minimum length 5 enforced by trigger*
+- `STUDENTNAME` (VARCHAR(150), NOT NULL)
+- `STUDENTEMAIL` (VARCHAR(150), UNIQUE, NOT NULL)
+- `STUDENTPHONENUMBER` (VARCHAR(20))
+- `BRANCH` (VARCHAR(50), NOT NULL) — *CSE, IT, AIML, AIDS, ECE*
+- `SEMESTER` (INT, NOT NULL) — *Semesters 1 through 8*
+
+### 5. `BOOKS`
+Physical volume inventory across all campuses.
+- `BOOKID` (INT, Primary Key, Auto Increment)
+- `TITLE` (VARCHAR(300), NOT NULL)
+- `ISBN` (VARCHAR(30))
+- `CATEGORY` (VARCHAR(100), NOT NULL) — *Constraint: `CK_BOOKS_CATEGORY CHECK (TRIM(CATEGORY) <> '')`*
+- `PUBLICATIONYEAR` (SMALLINT, NOT NULL) — *Range: 1800 to Next Year*
+- `PUBLISHERID` (INT, FK -> `PUBLISHER.PUBLISHERID`)
+- `LIBRARYID` (INT, FK -> `LIBRARY.LIBRARYID`)
+
+### 6. `BORROW`
+Transactional circulation log for checkouts and returns.
+- `BORROWID` (INT, Primary Key, Auto Increment)
+- `BORROWDATE` (DATE, NOT NULL)
+- `DUE_DATE` (DATE, NOT NULL)
+- `RETURNDATE` (DATE, NULLABLE)
+- `STUDENTID` (INT, FK -> `STUDENT.STUDENTID`)
+- `BOOKID` (INT, FK -> `BOOKS.BOOKID`)
+- `ACTIVE_BOOKID` (INT, GENERATED ALWAYS AS `(CASE WHEN RETURNDATE IS NULL THEN BOOKID ELSE NULL END)` STORED)
+- **Constraint**: `UNIQUE KEY UQ_BORROW_ONE_ACTIVE_BOOK (ACTIVE_BOOKID)` — *Guarantees at the database engine level that no single physical book can be actively loaned to more than one student simultaneously!*
+
+### 7. `WRITTEN_BY`
+Decomposed many-to-many junction table between `AUTHOR` and `BOOKS`.
+- `AUTHORID` (INT, FK -> `AUTHOR.AUTHORID` ON DELETE CASCADE)
+- `BOOKID` (INT, FK -> `BOOKS.BOOKID` ON DELETE CASCADE)
+- **Primary Key**: Composite `(AUTHORID, BOOKID)`
+
+### Performance Secondary Indexes:
+- `IDX_BOOKS_TITLE` on `BOOKS(TITLE)`
+- `IDX_BOOKS_YEAR` on `BOOKS(PUBLICATIONYEAR)`
+- `IDX_STUDENT_BRANCH` on `STUDENT(BRANCH)`
+- `IDX_BORROW_BORROWDATE` on `BORROW(BORROWDATE)`
+- `IDX_BORROW_BOOK_RETURN` on `BORROW(BOOKID, RETURNDATE)`
 
 ---
 
-## 📁 Project File Structure
+## 🔍 Relational Views
 
-```
-dbms project/
-├── public/                       # Frontend Web Application
-│   ├── index.html                # Single Page Dashboard & UI
-│   ├── css/
-│   │   └── style.css             # Tailored UI styles, glassmorphism, animations
-│   ├── js/
-│   │   ├── api.js                # API Client + Standalone Client DB Fallback
-│   │   ├── app.js                # Main Coordinator, Navigation, Modals & Toasts
-│   │   ├── books.js              # Catalog Controller (Grid/Table view, Filters)
-│   │   ├── circulation.js        # Circulation Desk (Issue & Return Book)
-│   │   ├── students.js           # Students Directory & Borrow History
-│   │   ├── dbms_lab.js           # Interactive Stored Procedures & SQL Console
-│   │   └── charts.js             # Chart.js Visualizations (Category & Library)
-│   └── data/
-│       └── seed_data.json        # Pre-seeded JSON dataset for offline mode
-│
-├── server.py                     # Python Backend REST Server & SQLite/MySQL bridge
-├── start_server.sh               # 1-Click Startup script
-├── library.db                    # Pre-initialized & verified SQLite database
-│
-├── create_databases.sql          # Creates `library_management_system`
-├── create_tables.sql             # Full DDL for 7 tables, constraints & seed dataset
-├── views_indexes.sql             # 5 Relational Views and secondary indexes
-├── stored_procedures.sql         # Stored Procedures (BORROW_BOOK, RETURN_BOOK, etc.)
-├── stored_fucntions.sql          # Stored Functions (GET_BOOK_AGE, etc.)
-├── TRIGGERS.sql                  # Before Insert / Update Triggers
-├── cursors.sql                   # Cursors for active borrowings & library stats
-├── ddl_dml.sql                   # Sample DDL & DML operations
-├── select.sql                    # 39 SQL Queries (Aggregates, Group By, Having, Joins)
-├── subqueries.sql                # Subqueries and Advanced Joins
-├── trigger_tests.sql             # Automated Trigger verification tests
-└── verification queries.sql      # Formal compliance verification queries
-```
+The database defines **5 persistent views** providing abstracted access:
+
+| View Name | Source Definition | Purpose |
+| :--- | :--- | :--- |
+| `AVAILABLE_BOOKS` | `BOOKS B JOIN PUBLISHER JOIN LIBRARY WHERE NOT EXISTS (SELECT 1 FROM BORROW WHERE RETURNDATE IS NULL)` | Filters only titles currently sitting on shelves available for checkout. |
+| `CURRENT_BORROWINGS` | `BORROW BR JOIN STUDENT JOIN BOOKS JOIN LIBRARY WHERE RETURNDATE IS NULL` | Lists ongoing loans with real-time `DAYS_PAST_DUE` calculation. |
+| `STUDENT_BORROWING_HISTORY` | `BORROW BR JOIN STUDENT JOIN BOOKS` | Full circulation ledger with status flags: `Returned`, `Overdue`, `Active`. |
+| `BOOK_DETAILS` | `BOOKS B LEFT JOIN WRITTEN_BY LEFT JOIN AUTHOR JOIN PUBLISHER JOIN LIBRARY GROUP BY BOOKID` | Aggregates multiple co-authors into a formatted string (`GROUP_CONCAT`). |
+| `OVERDUE_BOOKS` | `BORROW BR JOIN STUDENT JOIN BOOKS WHERE RETURNDATE IS NULL AND DUE_DATE < CURDATE()` | Isolates delinquent loans sorted descending by days overdue for penalty tracking. |
 
 ---
 
-## 👨‍💻 Evaluation Checklist (All PASS)
-- [x] Exactly 7 base tables with primary and foreign key constraints
-- [x] Seed row counts exceed all verification requirements (32 authors, 8 publishers, 3 libraries, 22 students, 37 books, 42 borrows, 50 written_by links)
-- [x] All 5 SQL views operational
-- [x] All 6 Stored Procedures executable
-- [x] All 4 Stored Functions testable
-- [x] All 4 Triggers validated and blocking invalid transactions
-- [x] Modern, responsive web interface accessible via browser
+## ⚙️ Stored Procedures
+
+All stored procedures feature structured error handlers (`SQLEXCEPTION`), automated rollbacks, and validation logic:
+
+1. **`BORROW_BOOK(p_student_id, p_book_id, p_borrow_date, p_due_date, OUT p_result)`**
+   - Validates student existence and book availability.
+   - Applies row-level lock `FOR UPDATE` on target book record.
+   - Enforces `borrow_date <= CURDATE()` and `due_date > borrow_date`.
+   - Inserts record into `BORROW` and returns formatted success string with `BORROWID`.
+
+2. **`RETURN_BOOK(p_borrow_id, p_return_date, OUT p_result)`**
+   - Locks the loan record `FOR UPDATE`.
+   - Validates that the loan exists and has not already been closed (`RETURNDATE IS NOT NULL`).
+   - Ensures `return_date >= borrow_date`.
+   - Sets `RETURNDATE` and commits transaction.
+
+3. **`GET_STUDENT_BORROW_HISTORY(p_student_id)`**
+   - Queries student history, calculating dynamic loan statuses and overdue status.
+
+4. **`GET_BOOKS_BY_LIBRARY(p_library_id)`**
+   - Retrieves full catalog inventory for a given branch with co-author aggregation and availability status.
+
+5. **`LIST_ALL_ACTIVE_BORROWINGS()`**
+   - Cursor-driven routine reporting active loans, days overdue, and loan counts.
+
+6. **`GENERATE_LIBRARY_STATS()`**
+   - Cursor-driven aggregation calculating total books, currently borrowed copies, and available stock per library.
+
+---
+
+## 📐 Stored Functions
+
+1. **`GET_BOOK_AGE(p_book_id INT) RETURNS INT`**
+   - Reads `PUBLICATIONYEAR` and computes `YEAR(CURDATE()) - PUBLICATIONYEAR`. Returns `-1` if book is not found.
+
+2. **`GET_STUDENT_BORROW_COUNT(p_student_id INT) RETURNS INT`**
+   - Computes total lifetime loans (returned + active) recorded for a given student ID.
+
+3. **`GET_ACTIVE_BORROW_COUNT(p_student_id INT) RETURNS INT`**
+   - Counts currently unreturned loans (`RETURNDATE IS NULL`) for a student.
+
+4. **`IS_BOOK_AVAILABLE(p_book_id INT) RETURNS TINYINT`**
+   - Returns `1` (Available), `0` (Borrowed), or `-1` (Not Found).
+
+---
+
+## 🛡️ Integrity Triggers
+
+Four database triggers prevent invalid state transitions before write commits:
+
+- **`TRG_BEFORE_INSERT_BORROW`**:
+  Rejects future-dated borrow dates (`BORROWDATE > CURDATE()`) and enforces `DUE_DATE > BORROWDATE` with `SIGNAL SQLSTATE '45000'`.
+- **`TRG_BEFORE_UPDATE_BORROW`**:
+  Guarantees that `BORROWDATE` and `DUE_DATE` cannot be tampered with after initial loan creation. Rejects reopenings of completed returns and invalid return dates.
+- **`TRG_BEFORE_INSERT_BOOKS`**:
+  Validates that publication year falls within `[1800, YEAR(CURDATE()) + 1]` and prevents blank titles.
+- **`TRG_BEFORE_INSERT_STUDENT`**:
+  Validates that `STUDENTNAME` is not empty and that `USERID` is at least 5 characters.
+
+---
+
+## 🔄 Cursor Implementations
+
+The system utilizes explicit MySQL cursors (`DECLARE ... CURSOR FOR`, `OPEN`, `FETCH`, `NOT FOUND` handler, `CLOSE`) in [`cursors.sql`](cursors.sql):
+- **Cursor 1 (`LIST_ALL_ACTIVE_BORROWINGS`)**: Iterates through active loan tuples, maintains running totals of on-time versus overdue transactions, and returns an itemized report.
+- **Cursor 2 (`GENERATE_LIBRARY_STATS`)**: Loops through each campus library entity, performs per-library inventory calculations, and returns an aggregated status summary.
+
+---
+
+## 💻 Frontend Web Platform & Features
+
+The web client is built with **HTML5, Tailwind CSS, Lucide Icons, and Chart.js**:
+
+1. **Dashboard & KPIs**:
+   - Live KPI counters (Total Books, Available Copies, Active Borrowings, Overdue Count, Students, Libraries).
+   - Category distribution doughnut chart & Library status bar chart.
+2. **Books Catalog**:
+   - Filter by Category, Library Campus, and Availability Status.
+   - Search across Title, Author names, and ISBN numbers.
+   - Card Grid and High-Density Table view toggles.
+   - Book details modal showing calculated book age.
+3. **Circulation Desk**:
+   - Issue book modal validating students and available books.
+   - Active loans list with quick return buttons and overdue indicators.
+   - Return book modal with late fee calculations.
+4. **Students Directory**:
+   - Search by roll number or branch with semester tags.
+   - Full history modal executing `GET_STUDENT_BORROW_HISTORY()`.
+5. **Overdue Tracker**:
+   - Isolated view of overdue items with days late and reminder action simulator.
+6. **DBMS Lab & Dynamic SQL Runner**:
+   - 1-click execution for all stored procedures and functions.
+   - Live trigger validation tester.
+   - Interactive SQL playground pre-loaded with queries from `select.sql` and `views_indexes.sql`.
+
+---
+
+## 🚀 Localhost Running Instructions
+
+### Option 1: 1-Click Startup Script (macOS / Linux)
+```bash
+./start_server.sh
+```
+
+### Option 2: Direct Python Command
+```bash
+python3 server.py
+```
+
+Open your browser and navigate to:
+👉 **`http://localhost:8000`**
+
+*Note: The Python backend (`server.py`) uses the Python standard library with zero external pip dependencies. It connects to MySQL or automatically initializes the embedded SQLite database (`library.db`) seeded with all project data.*
+
+---
+
+## ☁️ Vercel Cloud Deployment Guide
+
+The repository includes a production-ready [`vercel.json`](vercel.json) configuration.
+
+### Deploy in 30 Seconds via GitHub:
+1. Push this repository to your GitHub account:
+   ```bash
+   git remote add origin https://github.com/advikjain516-ux/Steller.git
+   git branch -M main
+   git push -u origin main
+   ```
+2. Log in to [Vercel](https://vercel.com/new).
+3. Select and import the `Steller` repository.
+4. Click **Deploy**. Vercel will build and host your application with a public `https://*.vercel.app` URL.
+
+---
+
+## 🧪 Verification & Test Results
+
+The backend has been verified against [`verification queries.sql`](verification%20queries.sql):
+
+```sql
++--------------------------------------------------------------+--------+
+| Test                                                         | Result |
++--------------------------------------------------------------+--------+
+| Exactly seven required base tables exist                     | PASS   |
+| Seeded sample row counts are present (35+ books, 20+ students)| PASS   |
+| Seven primary keys are defined                               | PASS   |
+| WRITTEN_BY has ordered composite primary key (AUTHORID,BOOKID)| PASS   |
+| Six foreign key relationships are defined                    | PASS   |
+| All seeded foreign key references resolve                    | PASS   |
+| Every seeded book has at least one author                    | PASS   |
+| At most one active loan exists per physical book             | PASS   |
+| Active-loan generated column and unique key exist            | PASS   |
+| Borrow and return date relationships are valid               | PASS   |
+| Five expected views exist                                    | PASS   |
+| Six expected procedures exist                                | PASS   |
+| Four expected stored functions exist                         | PASS   |
+| Four expected triggers exist                                 | PASS   |
+| Useful secondary indexes exist                               | PASS   |
++--------------------------------------------------------------+--------+
+```
